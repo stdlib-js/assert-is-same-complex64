@@ -35,38 +35,30 @@ limitations under the License.
 
 > Test if two arguments are both [single-precision complex floating-point numbers][@stdlib/complex/float32] and have the [same value][@stdlib/assert/is-same-value].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/assert-is-same-complex64
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-isSameComplex64 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex64@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var isSameComplex64 = require( 'path/to/vendor/umd/assert-is-same-complex64/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex64@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.isSameComplex64;
-})();
-</script>
+var isSameComplex64 = require( '@stdlib/assert-is-same-complex64' );
 ```
 
 #### isSameComplex64( v1, v2 )
@@ -102,14 +94,9 @@ var bool = isSameComplex64( x, y );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-same-complex64@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Complex64 = require( '@stdlib/complex-float32' );
+var isSameComplex64 = require( '@stdlib/assert-is-same-complex64' );
 
 var x = new Complex64( 1.0, 2.0 );
 var y = new Complex64( 1.0, 2.0 );
@@ -125,11 +112,6 @@ x = new Complex64( NaN, NaN );
 y = new Complex64( NaN, NaN );
 out = isSameComplex64( x, y );
 // returns true
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -139,6 +121,14 @@ out = isSameComplex64( x, y );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/assert-is-complex64`][@stdlib/assert/is-complex64]</span><span class="delimiter">: </span><span class="description">test if a value is a 64-bit complex number.</span>
+-   <span class="package-name">[`@stdlib/assert-is-same-complex128`][@stdlib/assert/is-same-complex128]</span><span class="delimiter">: </span><span class="description">test if two arguments are both double-precision complex floating-point numbers and have the same value.</span>
+-   <span class="package-name">[`@stdlib/assert-is-same-value`][@stdlib/assert/is-same-value]</span><span class="delimiter">: </span><span class="description">test if two arguments are the same value.</span>
 
 </section>
 
@@ -213,9 +203,17 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-same-complex64/main/LICENSE
 
-[@stdlib/complex/float32]: https://github.com/stdlib-js/complex-float32/tree/umd
+[@stdlib/complex/float32]: https://github.com/stdlib-js/complex-float32
 
-[@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value/tree/umd
+[@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value
+
+<!-- <related-links> -->
+
+[@stdlib/assert/is-complex64]: https://github.com/stdlib-js/assert-is-complex64
+
+[@stdlib/assert/is-same-complex128]: https://github.com/stdlib-js/assert-is-same-complex128
+
+<!-- </related-links> -->
 
 </section>
 
