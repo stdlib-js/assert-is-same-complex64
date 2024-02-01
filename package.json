@@ -38,7 +38,8 @@
   },
   "dependencies": {
     "@stdlib/assert-is-complex64": "^0.1.1",
-    "@stdlib/complex-base-assert-is-same-valuef": "github:stdlib-js/complex-base-assert-is-same-valuef#main"
+    "@stdlib/complex-base-assert-is-same-valuef": "github:stdlib-js/complex-base-assert-is-same-valuef#main",
+    "@stdlib/error-tools-fmtprodmsg": "^0.1.1"
   },
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.1.1",
