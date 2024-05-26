@@ -208,7 +208,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-same-complex64/main/LICENSE
 
-[@stdlib/complex/float32/ctor]: https://github.com/stdlib-js/complex-float32
+[@stdlib/complex/float32/ctor]: https://github.com/stdlib-js/complex-float32-ctor
 
 [@stdlib/assert/is-same-value]: https://github.com/stdlib-js/assert-is-same-value
 
